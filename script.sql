@@ -51,7 +51,7 @@ ALTER TABLE mydatabase.womengov
 DROP COLUMN MONTH;
 
 CREATE TABLE mydatabase.women_in_government
-AS SELECT date,value FROM mydatabase.temp;
+AS SELECT date,value FROM mydatabase.womengov;
 
 ALTER TABLE mydatabase.women_in_government
 RENAME value to valueInThousands;
