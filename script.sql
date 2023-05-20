@@ -114,7 +114,7 @@ UPDATE mydatabase.merged set date = CONCAT(month,' ',year);
 --Add ratio column
 ALTER TABLE mydatabase.merged
 ADD COLUMN ratio float;
-UPDATE mydatabase.merged set ratio = valueprod/valuesup;
+UPDATE mydatabase.merged set ratio = valueprod/NULLIF(valuesup,0);
 
 --Final table for production employees / supervisory employees ratio
 
