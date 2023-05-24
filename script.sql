@@ -1,11 +1,3 @@
-
- CREATE SCHEMA mydatabase; 
- CREATE TABLE mydatabase.dataset (series_id VARCHAR,year INT,period VARCHAR,value float,footnote_code VARCHAR); 
-\copy mydatabase.dataset FROM 'C:/Users/Giuliana Castellini/Documents/Giuliana 2/Nimble/ce.data.0.AllCESSeries.txt' DELIMITER '|' CSV HEADER;
- CREATE TABLE mydatabase.series (series_id VARCHAR,supersector_code VARCHAR,industry_code VARCHAR,data_type_code VARCHAR,seasonal VARCHAR,series_title VARCHAR, 
- footnote_codes VARCHAR, begin_year INT, begin_period VARCHAR,end_year INT, end_period VARCHAR);
- \copy mydatabase.series FROM 'C:/Users/Giuliana Castellini/Documents/Giuliana 2/Nimble/ce.series.txt' DELIMITER '|' CSV HEADER; 
-
 --Evolution Women in Government during time
 
 --Check which series I need
